@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  display: flex;
+  background: #000000;
+  color: #FFFFFF;
+  height: 50px;
+  width: 300px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  justify-content: end;
+  align-items: flex-end;
+  padding: 10px 14px;
+  font-size: 1.125rem;
+}

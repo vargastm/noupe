@@ -1,0 +1,96 @@
+/* Products List */
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.products-list h2 {
+  background-color: #000000;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-list h2 span {
+  font-size: 0.6875rem;
+}
+
+.products-list a {
+  display: grid;
+}
+
+.product-info img {
+  border: 3px solid  #000000;
+}
+
+.all-products .button {
+  float: right;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-weight: lighter;
+}
+
+
+.sku {
+  background-color: #000000;
+  color: #FFFFFF;
+  position: absolute;
+  font-size: .5rem;
+  padding: 2px 6px;
+  margin: 13px;
+  font-weight: lighter;
+}
+
+.product-info {
+  grid-area: 1/1;
+}
+
+.product-overlay {
+  opacity: 0;
+  grid-area: 1/1;
+  background: #FFFFFF;
+  border: 3px solid  #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: opacity .4s;
+  text-align: center;
+}
+
+.product-overlay .sku {
+  font-size: 1rem;
+  padding: 7px 5px;
+  position: relative;
+}
+
+.product-overlay h2 {
+  background: none;
+  padding: 0px;
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.product-overlay .product-price{ 
+  font-size: 2rem;
+}
+
+.product-item a:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-item a:hover .product-info .sku {
+  opacity: 0;
+}
+
+.product-overlay .button{
+  width: 100%;
+  margin: 0;
+}

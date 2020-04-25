@@ -1,0 +1,22 @@
+.introduction {
+  background: url('../img/banner.jpg') no-repeat center;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.introduction .container {
+  height: 700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  font-size: 2rem;
+}
