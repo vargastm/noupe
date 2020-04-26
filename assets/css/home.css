@@ -1,8 +1,9 @@
 .introduction {
-  background: url('../img/banner.jpg') no-repeat center;
+  background: url('../images/banner.jpg') no-repeat center;
   width: 100%;
   height: 700px;
   background-size: cover;
+  margin-top: 80px;
 }
 
 .introduction .container {

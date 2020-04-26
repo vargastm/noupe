@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php bloginfo('name')?> <?php wp_title('|'); ?></title>
   <?php wp_head(); ?>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> </head>
+  <script src="https://kit.fontawesome.com/56f393793a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
 <body <?php body_class(); ?>>
 
 <?php
 
-$img_url = get_stylesheet_directory_uri() . '/img';
+$img_url = get_stylesheet_directory_uri() . '/assets/images';
 $cart_count = WC() -> cart -> get_cart_contents_count();
 
 ?>

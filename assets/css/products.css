@@ -29,7 +29,7 @@
 }
 
 .all-products .button {
-  float: right;
+  margin-left: auto;
   margin-top: 30px;
   margin-bottom: 80px;
   font-weight: lighter;
@@ -41,9 +41,10 @@
   color: #FFFFFF;
   position: absolute;
   font-size: .5rem;
-  padding: 2px 6px;
+  padding: 3px 7px;
   margin: 13px;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .product-info {
@@ -66,8 +67,9 @@
 
 .product-overlay .sku {
   font-size: 1rem;
-  padding: 7px 5px;
+  padding: 7px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .product-overlay h2 {
@@ -75,6 +77,10 @@
   padding: 0px;
   color: #000000;
   font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.product-overlay span {
   font-weight: bold;
 }
 

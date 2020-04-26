@@ -23,13 +23,17 @@ a {
   color: #000000;
 }
 
+ins {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 

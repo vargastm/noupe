@@ -1,0 +1,80 @@
+.footer {
+  background-color: #000000;
+}
+
+.footer .container {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  width: 215px;
+}
+
+.footer div div a i {
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  margin-right: 10px;
+}
+
+.promotions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer form label {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.footer form input {
+  height: 40px;
+  width: calc(300px - 40px);
+  padding-left: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.footer form button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-singup {
+  display: flex;
+}
+
+.right-arrow:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0; 
+  height: 0; 
+
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #000000;
+}
+
+.footer-copy .container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  background-color: #FFFFFF;
+}
+
+.footer-copy img {
+  width: 23px;
+}
