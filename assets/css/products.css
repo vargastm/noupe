@@ -5,6 +5,15 @@
   grid-gap: 20px;
 }
 
+.all-products {
+  background: url('../images/bg-trocar.jpg');
+}
+
+.all-products .container {
+  padding-top: 1px;
+  padding-bottom: 80px;
+}
+
 .products-list h2 {
   background-color: #000000;
   padding: 12px;
@@ -31,7 +40,6 @@
 .all-products .button {
   margin-left: auto;
   margin-top: 30px;
-  margin-bottom: 80px;
   font-weight: lighter;
 }
 

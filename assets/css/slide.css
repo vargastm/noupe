@@ -1,0 +1,28 @@
+.slide-wrapper {
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+
+.slide {
+  display: flex
+}
+
+.slide img {
+  max-width: none;
+  width: 344px;
+}
+
+.slide-button {
+  border: none;
+  background: #FFFFFF;
+  cursor: pointer;
+  margin-left: 140px;
+  margin-right: 140px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.slide-button img {
+  width: 35px;
+}
