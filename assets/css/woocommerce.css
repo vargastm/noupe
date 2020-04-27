@@ -1,0 +1,12 @@
+.variations_form .variations tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.variations_form .variations .value {
+  margin-bottom: 20px;
+}
+
+.variations_form .label label {
+  font-size: 1.5rem;
+}
