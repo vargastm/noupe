@@ -10,3 +10,7 @@
 .variations_form .label label {
   font-size: 1.5rem;
 }
+
+.woocommerce-breadcrumb a, .woocommerce-breadcrumb {
+  color: #000000 !important;
+}

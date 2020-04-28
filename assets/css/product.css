@@ -1,14 +1,29 @@
+a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
 .product {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-gallery {
+  width: 50%;
+  height: 600px;
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-gap: 20px;
+}
+
+.product-gallery-main img {
+  height: 600px;
 }
 
 .product-gallery-list img {
@@ -20,7 +35,8 @@
 }
 
 .product-detail {
-  margin-left: auto;
+  width: 50%;
+  padding: 0 0 5% 5%;
 }
 
 .product-detail small {
@@ -50,7 +66,7 @@
   margin-top: 30px;
 }
 
-.product-detail .reset_variations, .product-detail .stock , .product-detail .quantity{
+.product-detail .reset_variations, .product-detail .stock , .product-detail .quantity {
   display: none !important;
 }
 
@@ -72,6 +88,103 @@
 }
 
 .product-detail .button.disabled {
-  opacity: .5;
-  cursor: initial;
+  opacity: 1 !important;
+  cursor: pointer !important;
+}
+
+
+.button:hover, .product-detail .button.disabled:hover  {
+  opacity: 0.8 !important;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.product-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 0.875rem;
+  font-weight: lighter;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 5%;
+}
+
+.product-description col {
+  font-size: 0.875rem;
+  font-weight: lighter;
+  display: flex;
+}
+
+.table table {
+  width: 100%;
+  text-transform: uppercase;
+  vertical-align: center;
+}
+
+.table table thead tr {
+  text-align: center;
+  background: #000000;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.75rem; 
+}
+
+.table table tbody td {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  background: #EEEEEE;
+  border-bottom: 1px solid white;
+}
+
+.product-description p {
+  font-size: 0.875rem;
+  font-weight: lighter;
+}
+
+.product-description ul {
+  display: flex;
+}
+
+.product-description ul li { 
+  margin: 2px;
+}
+
+.product-description h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.product-description ul:last-child {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-description ul:last-child li {
+  margin: 6px 5px 6px 0;
+}
+
+.product-description ul:last-child a {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 5px 8px;
+  color: #333333;
+  background-color: #EEEEEE;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.product-description div:last-child h4:nth-last-of-type(1) {
+  margin-top: 15px;
+}
+.related {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background: url(../images/bg-trocar.jpg);
+  padding-top: 1px;
 }

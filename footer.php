@@ -1,13 +1,9 @@
-<?php wp_footer();
-
-$img_url = get_stylesheet_directory_uri() . '/assets/images';
-
-?>
+<?php wp_footer(); ?>
 
 <footer class="footer">
   <div class="container">
     <div>
-      <a href="/"><img src="<?= $img_url; ?>/noupe.svg" alt="Noupe"/></a>
+      <a href="/"><img src="<?= get_images_uri(); ?>/noupe.svg" alt="Noupe"/></a>
       <a href="#"><i class="fab fa-facebook-square"></i></a>
       <a href="https://www.instagram.com/use.noupe/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
@@ -21,12 +17,12 @@ $img_url = get_stylesheet_directory_uri() . '/assets/images';
   </div>
   <div class="footer-copy">
     <div class="container">
-      <img src="<?= $img_url; ?>/n-logo.svg" alt="Noupe"/>
+      <img src="<?= get_images_uri(); ?>/n-logo.svg" alt="Noupe"/>
       <small> &copy; <?= date('Y'); ?> - NOUPE | CNPJ: 35.597.838/0001-99</small>
     </div>
   </div>
 </footer>
-<script src="<?= get_stylesheet_directory_uri(); ?>/js/slide.js"></script>
-<script src="<?= get_stylesheet_directory_uri(); ?>/js/script.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/js/slide.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/js/script.js"></script>
 </body>
 </html> 

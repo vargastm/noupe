@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+<?php 
+  $products_new = wc_get_products ([
+    'limit' => 4,
+    'tag' => ['drop1'],
+  ]);
+
+  $data['related'] = format_products($products_new, 'product');
+?>
+
 <?php
   function format_single_product($id, $img_size = 'medium') {
     $product = wc_get_product($id);
@@ -32,37 +41,120 @@
 <div class="container notification">
   <?php wc_print_notices(); ?>
 </div>
+<main>
+  <section class="container">
+    <div class="product">
+      <?php if(have_posts()): ?>
+        <?php  while(have_posts()): ?>
+          <?php the_post(); ?>
+            <?php  $product_format = format_single_product(get_the_ID()); ?>
+              <div class="product-gallery" data-gallery="gallery">
+                  <div class="product-gallery-list">
+                    <?php foreach($product_format['gallery'] as $img): ?>
+                      <img data-gallery="list" src="<?= $img; ?>" alt="<?= $product_format['name'];?>">
+                    <?php endforeach; ?>
+                  </div>
+                  <div class="product-gallery-main">
+                      <img data-gallery="main" src="<?= $product_format['img'] ?>" alt="<?= $product_format['name'];?>">
+                  </div>
+              </div>
+              <div class="product-detail">
+                <small><?= $product_format['sku']; ?></small>
+                <h1><?= $product_format['name'];?></h1>
+                <p class="product-price"><?= $product_format['price'];?></p>
+                <?php woocommerce_template_single_add_to_cart(); ?>
+              </div>
 
-<main class="container product">
-  <?php
-    if(have_posts()) { while(have_posts()) { the_post();
-      $product_format = format_single_product(get_the_ID());
-  ?>
-  <div class="product-gallery" data-gallery="gallery">
-      <div class="product-gallery-list">
-        <?php foreach($product_format['gallery'] as $img) { ?>
-          <img data-gallery="list" src="<?= $img; ?>" alt="<?= $product_format['name'];?>">
-        <?php } ?>
-      </div>
-      <div class="product-gallery-main">
-          <img data-gallery="main" src="<?= $product_format['img'] ?>" alt="<?= $product_format['name'];?>">
-      </div>
-  </div>
-  <div class="product-detail">
-    <small><?= $product_format['sku']; ?></small>
-    <h1><?= $product_format['name'];?></h1>
-    <p class="product-price"><?= $product_format['price'];?></p>
-    <h2>Descrição</h2>
-    <p><?= $product_format['description'];?></p>
-    <?php woocommerce_template_single_add_to_cart(); ?>
+      <?php endwhile; endif; ?>
+    
+    </div>
 
-  </div>
-  <?php } } ?>
-  
- 
-  <div>
-    <h1 class="subtitle">Produtos Relacionados</h1>
-  </div>
+    <div class="product-description">
+      <div class="col">
+        <h4>Descrição</h4>
+        <p><?= $product_format['description'];?></p>
+      </div>
+      <div class="col">
+        <h4>Medidas</h4>
+        <div class="table">
+          <table>
+            <thead> 
+              <tr>
+                <td><strong>Size</strong></td>
+                <td><strong>Altura</strong></td>
+                <td><strong>Largura</strong></td>
+                <td><strong>Manga</strong></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>S</td>
+                  <td>81</td>
+                  <td>55</td>
+                  <td>52</td>
+              </tr>
+              <tr>
+                  <td>M</td>
+                  <td>83</td>
+                  <td>59</td>
+                  <td>53</td>
+              </tr>
+              <tr>
+                  <td>L</td>
+                  <td>85</td>
+                  <td>63</td>
+                  <td>55</td>
+              </tr>
+              <tr>
+                  <td>XL</td>
+                  <td>87</td>
+                  <td>67</td>
+                  <td>56</td>
+              </tr>
+              <tr>
+                  <td>XXL</td>
+                  <td>89</td>
+                  <td>71</td>
+                  <td>57</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Share</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <h4>Tags</h4>
+        <ul>
+          <li><a href="#">Drop 1</a></li>
+          <li><a href="#">Tag Ban</a></li>
+          <li><a href="#">Tag Baaacon</a></li>
+          <li><a href="#">Brasil 0</a></li>
+          <li><a href="#">Brasil 2323</a></li>
+          <li><a href="#">Tagn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="related">
+    <div class="container">
+      <h1 class="subtitle">Relacionados</h1>
+      <ul class="products-list">
+        <?php 
+          foreach($data['related'] as $product) { 
+            set_query_var( 'product', $product );
+            get_template_part('include/product-item');
+          } 
+        ?>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <?php get_footer();?>
+

@@ -55,3 +55,7 @@ img {
   padding: 10px 14px;
   font-size: 1.125rem;
 }
+
+.introduction .tag:hover {
+  opacity: 1 !important;
+}

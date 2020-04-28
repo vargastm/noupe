@@ -10,19 +10,14 @@
 </head>
 <body <?php body_class(); ?>>
 
-<?php
-
-$img_url = get_stylesheet_directory_uri() . '/assets/images';
-$cart_count = WC() -> cart -> get_cart_contents_count();
-
-?>
+<?php $cart_count = WC() -> cart -> get_cart_contents_count(); ?>
 
 <header class="header">
   <div class="container">
     <div class="menu">
       <a href="/shop">T-Shirts</a>
     </div>
-    <a href="/"><img src="<?= $img_url; ?>/noupe.svg" alt="Noupe"/></a>
+    <a href="/"><img src="<?= get_images_uri(); ?>/noupe.svg" alt="Noupe"/></a>
     <div class="account">
       <a href="/minha-conta" class="my-account">Conta</a>
       <a href="/carrinho" class="cart">Cart

@@ -78,9 +78,7 @@
           const e = "mouseup" === t.type ? "mousemove" : "touchmove";
           this.wrapper.removeEventListener(e, this.onMove), this.dist.finalPosition = this.dist.movePosition, this.transition(!0), this.changeSlideOnEnd()
       }
-      changeSlideOnEnd() {
-          this.dist.movement > 120 && void 0 !== this.index.next ? this.activeNextSlide() : this.dist.movement < -120 && void 0 !== this.index.prev ? this.activePrevSlide() : this.changeSlide(this.index.active)
-      }
+     
       addSlideEvents() {
           this.wrapper.addEventListener("mousedown", this.onStart), this.wrapper.addEventListener("touchstart", this.onStart), this.wrapper.addEventListener("mouseup", this.onEnd), this.wrapper.addEventListener("touchend", this.onEnd)
       }
