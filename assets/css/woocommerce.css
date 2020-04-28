@@ -14,3 +14,76 @@
 .woocommerce-breadcrumb a, .woocommerce-breadcrumb {
   color: #000000 !important;
 }
+
+.woocommerce-message, .woocommerce-info, .woocommerce-error {
+  background: #EEEEEE;
+  border: none;
+  color: #000000;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
+.woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before {
+  display: none;
+}
+
+.woocommerce-error {
+  border-left: 4px solid #FE322C
+}
+
+.woocommerce-message, .woocommerce-info {
+  border-left: 4px solid #00BE33;
+}
+
+.woocommerce table.shop_table, .login {
+  border-radius: 0 !important;
+}
+
+.woocommerce #coupon_code {
+  width: 130px;
+  margin-right: 10px;
+}
+
+.woocommerce .input-text {
+  font-size: 1 !important;
+  padding: 10px 15px !important;
+}
+
+.woocommerce form .form-row {
+  padding: 3px 0;
+}
+
+#payment {
+  background: none !important;
+}
+
+.methods {
+  padding: 0 0 15px 0 !important;
+}
+
+.place-order {
+  padding: 15px 0 0 0 !important;
+}
+
+.qty {
+  width: 30% !important;
+}
+
+.login p:nth-of-type(3), .login p:nth-of-type(4)  {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.login p:nth-of-type(3) {
+  flex-direction: column-reverse;
+}
+
+.login p:nth-of-type(3) .button {
+  margin: 0 !important;
+}

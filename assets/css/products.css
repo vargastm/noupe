@@ -29,7 +29,7 @@
   font-size: 0.6875rem;
 }
 
-.products-list a {
+.products-list div:first-child {
   display: grid;
 }
 
@@ -96,11 +96,11 @@
   font-size: 2rem;
 }
 
-.product-item a:hover .product-overlay {
+.product-item div:hover .product-overlay {
   opacity: 1;
 }
 
-.product-item a:hover .product-info .sku {
+.product-item div:hover .product-info .sku {
   opacity: 0;
 }
 

@@ -63,7 +63,7 @@
           this.dist.movePosition = t, this.slide.style.transform = `translate3d(calc(${t}px - 784.5px), 0, 0)`
       }
       updatePosition(t) {
-          return this.dist.movement = 1.6 * (this.dist.startX - t), this.dist.finalPosition - this.dist.movement
+          return this.dist.movement = 1 * (this.dist.startX - t), this.dist.finalPosition - this.dist.movement
       }
       onStart(t) {
           let e;
