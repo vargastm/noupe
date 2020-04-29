@@ -45,3 +45,6 @@
     return get_template_directory_uri() . '/assets/images';
   }
 
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
+
+include(get_template_directory() . '/include/user-custom-menu.php');

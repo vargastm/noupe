@@ -64,33 +64,9 @@
   display: none !important;
 }
 
-.product-detail .button, .woocommerce .button {
-  display: flex !important;
-  background: #000000 !important;
-  color: #FFFFFF !important;
-  height: 50px !important;
-  width: 300px !important;
-  text-transform: uppercase !important;
-  font-weight: bold !important;
-  font-size: 1rem !important;
-  justify-content: end !important;
-  align-items: flex-end !important;
-  padding: 10px 14px !important;
-  font-size: 1.125rem !important;
-  border-radius: 0% !important;
-  margin-left: auto !important;
-}
-
-.product-detail .button.disabled,.woocommerce .button {
+.button-noupe.disabled, .single_add_to_cart_button.disabled, .woocommerce button.button:disabled {
   opacity: 1 !important;
   cursor: pointer !important;
-}
-
-
-.button:hover, .product-detail .button.disabled:hover, .woocommerce .button:hover {
-  opacity: 0.8 !important;
-  cursor: pointer;
-  transition: all 0.2s;
 }
 
 .product-description {

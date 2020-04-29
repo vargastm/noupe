@@ -20,7 +20,7 @@
           <h2><?= $product['name']; ?></h2>
           <span class="product-price"><?= $product['price']; ?></span>
         </div>
-        <a href="<?= $product['link']; ?>" class="button">Ver Produto</a>
+        <a href="<?= $product['link']; ?>" class="button-noupe">Ver Produto</a>
       </div>
     </div>
 </li>

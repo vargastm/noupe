@@ -20,6 +20,6 @@
         } 
       ?>
     </ul>
-    <a href="#" class="button">Carregar Mais</a>
+    <a href="#" class="button-noupe">Carregar Mais</a>
   </div>
 </section>

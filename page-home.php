@@ -4,7 +4,7 @@
   <section class="introduction">
     <a href="/shop" class="tag">
     <div class="container">
-      <span class="button tag">Drop #1 Lançamento</span>
+      <span class="button-noupe tag">Drop #1 Lançamento</span>
     </div>
     </a>
   </section>

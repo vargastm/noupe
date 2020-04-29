@@ -37,7 +37,7 @@
   border: 3px solid  #000000;
 }
 
-.all-products .button {
+.all-products .button-noupe {
   margin-left: auto;
   margin-top: 30px;
   font-weight: lighter;
@@ -104,7 +104,7 @@
   opacity: 0;
 }
 
-.product-overlay .button{
+.product-overlay .button-noupe {
   width: 100%;
   margin: 0;
 }
