@@ -1,5 +1,4 @@
 .product {
-  border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -26,6 +25,7 @@
 
 .breadcrumb {
   margin-top: 100px;
+  border-bottom: 1px solid #000000;
 }
 
 .product-detail {

@@ -148,3 +148,20 @@
 .checkout .col-1 {
   width: 100% !important;
 }
+
+/* Archive */
+.products-archive {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+/* Order */
+.woocommerce-ordering {
+  margin-bottom: 20px;
+  margin-left: auto;
+  float: none !important;
+}
+
+.woocommerce-ordering select {
+  font-size: 1rem;
+}
