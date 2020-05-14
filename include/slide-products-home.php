@@ -8,7 +8,7 @@
 ?>
 
 <section class="slide-wrapper">
-    <ul class="slide products-list">
+    <ul class="slide">
       <button class="slide-button"><img src="<?= get_images_uri(); ?>/leftarrow.svg"></button>
       <?php 
         foreach($data['slide'] as $product) { 

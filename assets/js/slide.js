@@ -60,7 +60,7 @@
           this.slide.style.transition = t ? "transform .3s" : ""
       }
       moveSlide(t) {
-          this.dist.movePosition = t, this.slide.style.transform = `translate3d(calc(${t}px - 784.5px), 0, 0)`
+          this.dist.movePosition = t, this.slide.style.transform = `translate3d(calc(${t}px - 764px), 0, 0)`
       }
       updatePosition(t) {
           return this.dist.movement = 1 * (this.dist.startX - t), this.dist.finalPosition - this.dist.movement

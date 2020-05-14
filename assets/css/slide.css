@@ -4,9 +4,13 @@
 }
 
 .slide {
-  display: flex
+  display: flex;
 }
 
+
+.slide .product-item{
+  margin-right: 20px;
+}
 .slide img {
   max-width: none;
   width: 344px;
