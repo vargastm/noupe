@@ -1,0 +1,72 @@
+
+@media (max-width: 1300px) {
+  .container {
+    width: 800px;
+  }
+  body {
+    background-color: red;
+  }
+
+  .products-shop .products-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .all-products .products-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products-list :nth-child(9){
+    display: flex;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 400px;
+  }
+
+  body {
+    background-color: aquamarine;
+  }
+
+  .woocommerce-account.logged-in .woocommerce { 
+    grid-template-columns: 1fr;
+  }
+
+  .products-archive {
+    grid-template-columns: 1fr;
+  }
+
+  .filters::before {
+    content: 'Filtrar Resultados';
+    display: block;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .products-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .product-info img {
+    width: 400px;
+  }
+
+  .filters {
+    margin-top: 40px;
+    grid-row: 2;
+  }
+
+  .footer .container div img {
+    width: 115px;
+  }
+
+  .footer form input {
+    width: calc(200px - 40px);
+    margin-left: 20px;
+  }
+}

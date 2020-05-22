@@ -1,6 +1,6 @@
 <?php 
   $products_new = wc_get_products ([
-    'limit' => 8,
+    'limit' => 9,
     'meta_key' => 'total_sales',
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
