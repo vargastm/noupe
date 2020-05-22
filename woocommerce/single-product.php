@@ -10,7 +10,7 @@
 ?>
 
 <?php
-  function format_single_product($id, $img_size = 'medium') {
+  function format_single_product($id, $img_size = 'main_product') {
     $product = wc_get_product($id);
 
     $gallery_ids = $product -> get_gallery_attachment_ids();

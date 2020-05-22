@@ -9,14 +9,16 @@
 
 .product-gallery {
   width: 50%;
-  height: 600px;
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-gap: 20px;
 }
 
 .product-gallery-main img {
-  height: 600px;
+  height: 660px;
+  width: 480px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .product-gallery-list img {
@@ -31,30 +33,55 @@
 .product-detail {
   width: 50%;
   padding: 0 0 5% 5%;
+  text-align: right;
 }
 
 .product-detail small {
-  display: block;
-  color: rgba(0, 0, 0, .5);
+  color: white;
   font-size: 0.75rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  background-color: black;
+  padding: 5px 8px;
 }
 
 .product-detail h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 30px; 
+  font-size: 3.75rem;
+  font-weight: 900;
+  margin: 10px 0 25px 0;
+  text-transform: uppercase;
+
 }
 
 .product-detail .product-price {
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 1.125rem;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
 
+.product-detail del{
+  font-weight: 400;
+}
+.product-detail select{
+  background: #f0f0f0;
+  border: none;
+  height: 40px;
+  width: 200px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  padding-left: 8px;
+}
 
+.product-detail option{
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  padding: 12px 8px;
+}
+.product-detail label{
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-size: 1.25rem !important;
+}
 .product-detail h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -165,4 +192,18 @@
   align-items: center;
   background: url(../images/bg-trocar.jpg);
   padding-top: 1px;
+}
+
+
+.woocommerce div.product form.cart .button {
+  vertical-align: middle;
+  float: none !important;
+}
+
+.woocommerce div.product form.cart .variations select {
+  margin-right: 0 !important;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+  padding-right: 0 !important;
 }

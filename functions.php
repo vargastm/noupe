@@ -16,6 +16,7 @@
   function noupe_custom_images() {
     add_image_size('product', 279, 399, ['center', 'center']);
     add_image_size('slide', 344, 447, ['center', 'center']);
+    add_image_size('main_product', 480, 720, ['center', 'center']);
     update_option('medium_crop', 1);
   }
 

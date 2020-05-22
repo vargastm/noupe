@@ -6,7 +6,7 @@
   <title><?php bloginfo('name')?> <?php wp_title('|'); ?></title>
   <?php wp_head(); ?>
   <script src="https://kit.fontawesome.com/56f393793a.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body <?php body_class(); ?>>
 
