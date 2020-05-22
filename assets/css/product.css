@@ -194,6 +194,10 @@
   padding-top: 1px;
 }
 
+.related .subtitle {
+  margin-top: 0;
+}
+
 
 .woocommerce div.product form.cart .button {
   vertical-align: middle;
