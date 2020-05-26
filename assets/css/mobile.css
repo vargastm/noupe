@@ -3,9 +3,6 @@
   .container {
     width: 800px;
   }
-  body {
-    background-color: red;
-  }
 
   .products-shop .products-list {
     grid-template-columns: repeat(2, 1fr);
@@ -19,15 +16,19 @@
   .products-list :nth-child(9){
     display: flex;
   }
+
+  .related .products-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .related .products-list :nth-child(4){
+    display: none;
+  }
 }
 
 @media (max-width: 850px) {
   .container {
     width: 400px;
-  }
-
-  body {
-    background-color: aquamarine;
   }
 
   .woocommerce-account.logged-in .woocommerce { 
