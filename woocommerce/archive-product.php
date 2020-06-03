@@ -15,6 +15,8 @@
   <?php woocommerce_breadcrumb(['delimiter' => ' > ']) ?>
 </div>
 
+
+
 <article class="container products-archive">
   <nav class="filters">
     <div class="filter">
@@ -54,6 +56,7 @@
     </div>
   </nav>
   <main>
+  <button class="button-filters button">Filtros</button>
     <?php if($data['products'][0]) { ?>
         <?php woocommerce_catalog_ordering(); ?>
         <section class="products-shop">

@@ -1,3 +1,6 @@
+.button-filters {
+  display: none;
+}
 
 @media (max-width: 1300px) {
   .container {
@@ -27,6 +30,46 @@
 }
 
 @media (max-width: 850px) {
+  .related {
+    margin-top: 40px;
+  }
+
+  .related .products-list .product-item:nth-child(1), .related .products-list .product-item:nth-child(2){
+    display: none;
+  }
+
+  .product-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-detail {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .product {
+    display: block;
+  }
+
+  .product-gallery {
+    display: block;
+    width: 100%;
+  }
+
+  .product-gallery-list {
+    display: none;
+  }
+
+  .button-filters {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+
+  .products-archive {
+    padding: 20px 0;
+  }
+
   .container {
     width: 400px;
   }
@@ -39,14 +82,12 @@
     grid-template-columns: 1fr;
   }
 
-  .filters::before {
-    content: 'Filtrar Resultados';
-    display: block;
-    background: #000000;
-    color: #FFFFFF;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+  .coupon .button {
+    font-size: 80% !important;
+  }
+
+  #coupon_code {
+    width: 132px !important;
   }
 
   .products-list {
@@ -58,8 +99,7 @@
   }
 
   .filters {
-    margin-top: 40px;
-    grid-row: 2;
+    display: none;
   }
 
   .footer .container div img {
@@ -69,5 +109,30 @@
   .footer form input {
     width: calc(200px - 40px);
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+
+  .footer label {
+    font-size: 0.875rem;
+  }
+
+  .footer form input {
+    width: calc(140px - 40px);
+  }
+  
+  .footer .container div img {
+    width: 100px;
+  }
+
+  .footer .container {
+    height: 250px;
+  }
+  .footer-copy .container {
+    height: 45px;
   }
 }
