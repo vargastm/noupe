@@ -24,5 +24,14 @@
         <span class="cart-count"><?= $cart_count ; ?></span>
       </a>
     </div>
+    <div class="menu-mobile">
+      <div class="menu">
+        <a href="/shop">T-Shirts</a>
+        <a href="/minha-conta" class="my-account">Conta</a>
+        <a href="/carrinho" class="cart">Cart
+          <span class="cart-count"><?= $cart_count ; ?></span>
+        </a>
+      </div>
+    </div>
   </div>
 </header>

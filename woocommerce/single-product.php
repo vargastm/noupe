@@ -122,7 +122,7 @@
         </div>
       </div>
       <div class="col">
-        <h4>Share</h4>
+        <h4>Compartilhar</h4>
         <ul>
           <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
