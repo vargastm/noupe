@@ -8,12 +8,10 @@
 }
 
 
-.slide .product-item{
-  margin-right: 20px;
-}
+
 .slide img {
   max-width: none;
-  width: 344px;
+  width: 100%;
 }
 
 .slide-button {
@@ -29,4 +27,12 @@
 
 .slide-button img {
   width: 35px;
+}
+
+.tns-controls button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+
 }

@@ -7,6 +7,7 @@
   <?php wp_head(); ?>
   <script src="https://kit.fontawesome.com/56f393793a.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 </head>
 <body <?php body_class(); ?>>
 

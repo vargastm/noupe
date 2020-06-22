@@ -7,15 +7,15 @@
   $data['slide'] = format_products($products_new, 'slide');
 ?>
 
-<section class="slide-wrapper">
-    <ul class="slide">
-      <button class="slide-button"><img src="<?= get_images_uri(); ?>/leftarrow.svg"></button>
+<section class="slide-wrapper container">
+    <ul class="slide my-slider">
+      <!-- <button class="slide-button"><img src="<?= get_images_uri(); ?>/leftarrow.svg"></button> -->
       <?php 
         foreach($data['slide'] as $product) { 
           set_query_var( 'product', $product );
           get_template_part('include/product-item');
         } 
       ?>
-      <button class="slide-button"><img src="<?= get_images_uri(); ?>/rightarrow.svg"></button>
+      <!-- <button class="slide-button"><img src="<?= get_images_uri(); ?>/rightarrow.svg"></button> -->
     </ul>
 </section>

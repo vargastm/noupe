@@ -11,6 +11,7 @@
           <h2><?= $product['name']; ?> <span><?= $product['price']; ?></span></h2>
         </div>
       </div>
+      
       <div class="product-overlay">
         <?php if($product['sku']) { ?>
           <span class="sku"><?= $product['sku']; ?></span>
@@ -22,5 +23,5 @@
         </div>
         <a href="<?= $product['link']; ?>" class="button-noupe">Ver Produto</a>
       </div>
-    </div>
+  </div>
 </li>
