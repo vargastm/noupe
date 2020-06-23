@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/valorize/noupe.com.br/wp-content/themes/noupe 
+    - /bin/cp -R * $DEPLOYPATH
