@@ -11,9 +11,6 @@ function handleButtonFilter(){
   }
 }
 
-const slide = new Slide('.slide', '.slide-wrapper');
-slide.init(); 
-
 class Gallery {
   constructor() {
     this.gallery = document.querySelector('[data-gallery="gallery"]');
