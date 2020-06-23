@@ -124,20 +124,27 @@
       <div class="col">
         <h4>Compartilhar</h4>
         <ul>
-          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+          <li><a href="<?php the_permalink(); ?>"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="<?php the_permalink(); ?>"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="<?php the_permalink(); ?>"><i class="fab fa-pinterest"></i></a></li>
         </ul>
         <h4>Tags</h4>
-        <ul>
-          <li><a href="#">Drop 1</a></li>
-          <li><a href="#">Tag Ban</a></li>
-          <li><a href="#">Tag Baaacon</a></li>
-          <li><a href="#">Brasil 0</a></li>
-          <li><a href="#">Brasil 2323</a></li>
-          <li><a href="#">Tagn</a></li>
-        </ul>
+        <?php 
+            $current_tags = get_the_terms( get_the_ID(), 'product_tag' );
+
+            if ( $current_tags && ! is_wp_error( $current_tags ) ) { 
+                echo '<ul class="product_tags">';
+
+                foreach ($current_tags as $tag) {
+                    $tag_title = $tag->name; 
+                    $tag_link = get_term_link( $tag );
+
+                    echo '<li><a href="'.$tag_link.'">'.$tag_title.'</a></li>';
+                }
+                echo '</ul>';
+            }
+          ?>
       </div>
     </div>
   </section>
