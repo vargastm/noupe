@@ -21,3 +21,33 @@
   margin-bottom: 17px;
   font-size: 2rem;
 }
+
+[data-action] {
+  display: none !important;
+}
+.tns-controls{
+ display: flex;
+ justify-content: center;
+}
+
+.tns-controls img{
+  width: 40%;
+}
+
+
+.tns-controls button{
+  border: none;
+  transition: all 0.2s;
+}
+
+.tns-controls button:hover{
+  opacity: 0.5;
+}
+
+.tns-controls button:focus {
+  outline: 0 !important;
+}
+
+ 
+
+    

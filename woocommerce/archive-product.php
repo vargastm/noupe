@@ -18,7 +18,7 @@
 
 
 <article class="container products-archive">
-  <nav class="filters">
+  <nav class="filters hide" id="filters">
     <div class="filter">
       <h3 class="filter-title">Categorias</h3>
       <?php 
@@ -56,7 +56,7 @@
     </div>
   </nav>
   <main>
-  <button class="button-filters button">Filtros</button>
+  <button onClick="handleButtonFilter()" id="handle-button-filter" class="button-filters button">Filtros</button>
     <?php if($data['products'][0]) { ?>
         <?php woocommerce_catalog_ordering(); ?>
         <section class="products-shop">

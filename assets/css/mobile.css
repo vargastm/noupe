@@ -34,6 +34,19 @@
 }
 
 @media (max-width: 850px) {
+
+  .subtitle{
+    margin-top: 30px;
+  }
+
+  .slide-wrapper{
+    margin-bottom: 20px;
+  }
+
+  .hide{
+    display: none !important;
+  }
+
   .menu-mobile {
     display: flex !important;
   } 
@@ -134,11 +147,6 @@
   .product-info img {
     width: 100%;
   }
-
-  .filters {
-    display: none;
-  }
-
   .footer .container div img {
     width: 115px;
   }
@@ -185,3 +193,4 @@
     height: 45px;
   }
 }
+

@@ -104,6 +104,12 @@
 
 .product-item {
   position: relative;
+
+}
+
+.tns-item {
+  margin-right: 10px;
+  
 }
 
 .product-item div:hover .product-overlay {

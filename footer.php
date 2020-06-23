@@ -28,22 +28,23 @@
       container: '.my-slider',
       items: 3,
       autoplay: true,
-      gutter: 10,
       nav: false,
-      autoplayButton: false,
       touch: true,
       controlsText: ["<img src='<?= get_images_uri(); ?>/leftarrow.svg'>", "<img src='<?= get_images_uri(); ?>/rightarrow.svg'>"],
       autoplayHoverPause: true,
+      controlsPosition: 'bottom',
       responsive: {
-      350: {
+      300: {
         items: 1,
       },
-      640: {
+      650: {
+        items: 1,
+      },
+      1000: {
         items: 3
       }
     }
-     
-    });
+  });
 </script>
 <script src="<?= get_template_directory_uri(); ?>/assets/js/script.js"></script>
 </body>
